@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>郑皓东 - 个人简历</title>
+<style>
+  :root {
+    --primary: #1a5276;
+    --accent: #2e86c1;
+    --bg: #f4f6f8;
+    --card-bg: #ffffff;
+    --text: #2c3e50;
+    --muted: #7f8c8d;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+  header.profile {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 24px rgba(26, 82, 118, 0.25);
+  }
+  header.profile h1 {
+    margin: 0 0 6px;
+    font-size: 28px;
+  }
+  header.profile .meta {
+    font-size: 14px;
+    opacity: 0.92;
+    margin-bottom: 14px;
+  }
+  header.profile .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 14px;
+  }
+  header.profile .contact span {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+  section.card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 22px 26px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+  section.card h2 {
+    font-size: 18px;
+    color: var(--primary);
+    border-left: 4px solid var(--accent);
+    padding-left: 10px;
+    margin: 0 0 14px;
+  }
+  .intent-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px 24px;
+    font-size: 14px;
+  }
+  .intent-grid div span.label {
+    color: var(--muted);
+    margin-right: 6px;
+  }
+  .summary {
+    font-size: 14.5px;
+    color: var(--text);
+    text-align: justify;
+  }
+  .entry {
+    margin-bottom: 18px;
+  }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-bottom: 4px;
+  }
+  .entry-header .title {
+    font-weight: 600;
+    font-size: 15.5px;
+  }
+  .entry-header .date {
+    color: var(--muted);
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .entry-sub {
+    font-size: 13.5px;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .entry p {
+    margin: 4px 0;
+    font-size: 14px;
+    text-align: justify;
+  }
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .skill-tag {
+    background: #eaf2f8;
+    color: var(--primary);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13.5px;
+  }
+  .divider {
+    border: none;
+    border-top: 1px dashed #e0e0e0;
+    margin: 14px 0;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12.5px;
+    margin-top: 24px;
+  }
+  @media print {
+    body { background: #fff; }
+    section.card { box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header class="profile">
+    <h1>郑皓东</h1>
+    <div class="meta">男 · 36岁（1983年3月）· 10年以上工作经验 · 本科 · 上海-黄浦区</div>
+    <div class="contact">
+      <span>📱 13764295682</span>
+      <span>✉️ solidsnake@aliyun.com</span>
+      <span>户口：上海</span>
+      <span>团员</span>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>求职意向</h2>
+    <div class="intent-grid">
+      <div><span class="label">期望工作地区：</span>上海</div>
+      <div><span class="label">期望月薪：</span>15000-25000 元/月</div>
+      <div><span class="label">目前状况：</span>在职，考虑换新环境（到岗约1个月）</div>
+      <div><span class="label">工作性质：</span>全职</div>
+      <div><span class="label">从事职业：</span>软件/互联网开发/系统集成</div>
+      <div><span class="label">从事行业：</span>互联网/电子商务、计算机软件、网络游戏</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>自我评价</h2>
+    <p class="summary">
+      软件设计师（高级程序员），拥有 15 年的游戏开发经验，6 年的 Unreal 引擎使用经验，对主流游戏引擎有较高的使用熟练度，
+      对美术和策划的工作也有一定了解。曾制作过 3D 游戏引擎（手机纯软件 C++ 实现）、3D 场景编辑器（支持高度图制作、
+      室内场景生成、CSG 操作、BSP 划分）、2D 动作编辑器与 2D 地图编辑器、粒子编辑器和特效编辑器。制作过各种类型的游戏，
+      拥有丰富的开发经验。
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>工作经历</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">北京卓越工坊（上海）有限公司 · UE4 高级程序员</span>
+        <span class="date">2019.10 - 至今</span>
+      </div>
+      <div class="entry-sub">网络游戏 · 15000-25000 元/月</div>
+      <p>使用 UE4 开发第三人称射击游戏，主要使用行为树和状态机实现敌人的逻辑。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">上海英佩软件有限公司 · 游戏开发程序员</span>
+        <span class="date">2013.08 - 2019.10</span>
+      </div>
+      <div class="entry-sub">网络游戏 · 15000-25000 元/月</div>
+      <p>
+        使用 UE3 引擎开发射击网络游戏，主要负责人物动画、武器、技能、载具、GameInfo 等游戏相关逻辑开发，
+        系统设置、输入法、游戏优化（内存支持 32 位系统、FPS 优化等）、头发材质、反外挂，也负责 Landscape、
+        SpeedTree、PhysX、Scaleform、Wwise 等相关集成。最近两年主要工作是 UE4 新项目开发，开发过一个 VR 射击小游戏。
+      </p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">上海第九城市 · 客户端程序员</span>
+        <span class="date">2010.07 - 2013.08</span>
+      </div>
+      <div class="entry-sub">网络游戏 · 10001-15000 元/月</div>
+      <p>
+        使用 Havok Vision 制作动作网络游戏，负责协助美术并提供解决方案制作客户端表现效果，包括 DOF、Motion Blur、
+        HDR、Landscape、动态草地、Ocean、Virtual Texture Map、流光特效等，进度紧张时也参与客户端逻辑开发。
+        使用过的中间件包括 Havok Vision、Havok、PhysX、Scaleform、Recast、SpeedTree 等。
+      </p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">上海优酷软件 (Gameloft) 有限公司 · 软件工程师</span>
+        <span class="date">2009.07 - 2010.06</span>
+      </div>
+      <div class="entry-sub">计算机软件 · 6001-8000 元/月</div>
+      <p>PS3 赛车游戏开发，主要负责图像方面的工作，包括车辆材质、ShadowMap、粒子系统等。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">上海鑫游软件公司 · 游戏设计/开发</span>
+        <span class="date">2008.12 - 2009.07</span>
+      </div>
+      <div class="entry-sub">网络游戏 · 4001-6000 元/月</div>
+      <p>引擎相关工具的开发，以及引擎研究。粒子系统及配套粒子编辑器、特效编辑器。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">傲聘电脑软件（上海）有限公司</span>
+        <span class="date">2008.01 - 2008.11</span>
+      </div>
+      <div class="entry-sub">网络游戏 · 4001-6000 元/月</div>
+      <p>制作 3D 游戏编辑器，3D 游戏逻辑。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">上海米高软件有限公司</span>
+        <span class="date">2006.02 - 2008.01</span>
+      </div>
+      <div class="entry-sub">计算机软件 · 4001-6000 元/月</div>
+      <p>J2ME 程序员，Symbian 程序员，游戏工具，3D 引擎。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">上海翡翠数码科技有限公司</span>
+        <span class="date">2005.07 - 2006.02</span>
+      </div>
+      <div class="entry-sub">计算机软件 · 2001-4000 元/月</div>
+      <p>J2ME 手机游戏程序员。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">上海元禾信息技术有限公司</span>
+        <span class="date">2004.02 - 2005.07</span>
+      </div>
+      <div class="entry-sub">计算机软件 · 1000-2000 元/月</div>
+      <p>MFC，数据库，C++，Linux。</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>项目经历</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">变形金刚（UE4）</span>
+        <span class="date">2019.10 - 至今</span>
+      </div>
+      <p>用 UE4 制作的 TPS 射击游戏。个人职责：负责 AI 部分。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">火源（UE4 VR 展示游戏）</span>
+        <span class="date">2017.09 - 2017.12</span>
+      </div>
+      <p>用 UE4 制作 VR 游戏。个人职责：完全负责程序部分。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">火源</span>
+        <span class="date">2013.08 - 2019.10</span>
+      </div>
+      <p>用 UE3 制作的射击类网游。个人职责：客户端程序。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">Mux</span>
+        <span class="date">2010.07 - 2013.08</span>
+      </div>
+      <p>无目标类动作网游，固定视角。个人职责：客户端程序。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">PS3 赛车游戏</span>
+        <span class="date">2009.07 - 2010.06</span>
+      </div>
+      <p>PS3 PSN 赛车游戏。个人职责：主要负责制作游戏所需的各种 Shader、粒子特效部分。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">Combo Effect Editor</span>
+        <span class="date">2009.02 - 2009.07</span>
+      </div>
+      <p>预览 3dsMax 插件导出的模型、骨骼、动画在引擎中的效果；模型、粒子系统等绑定在骨骼上，纹理动画。个人职责：全部负责。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">粒子编辑器</span>
+        <span class="date">2008.12 - 2009.01</span>
+      </div>
+      <p>粒子编辑器，支持多发射器，内有曲线编辑器，支持发射粒子、模型、尾迹粒子，可满足所有游戏的粒子系统要求。个人职责：全部负责。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">3D 场景编辑器</span>
+        <span class="date">2008.08 - 2008.11</span>
+      </div>
+      <p>以 Unreal 编辑器为目标的编辑器。个人职责：实现高度图地形制作、BSP 分割、CSG 操作、生成光照贴图、BSP 碰撞检测、Portal 计算、PVS 生成。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">Cooking</span>
+        <span class="date">2008.05 - 2008.10</span>
+      </div>
+      <p>类似于 Wii 上的料理妈妈，采用蓝牙感应手柄模拟烧菜步骤的游戏。个人职责：逻辑程序员，负责几道菜的逻辑。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">疯狂吉他</span>
+        <span class="date">2008.01 - 2008.05</span>
+      </div>
+      <p>类似于 PS2 上的吉他英雄，采用吉他外形操纵器根据屏幕提示弹奏音符的游戏。个人职责：制作编辑器，可编辑演出现场一切物体，包括场景灯光、灯光颜色、骨骼动画、口型动画等，并提供可视化预览。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">3D 游戏：乒乓</span>
+        <span class="date">2007.10 - 2007.12</span>
+      </div>
+      <p>类似于 Sega 猴子球的游戏。个人职责：使用软件渲染引擎制作。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">Symbian C++ 纯软件渲染 3D 游戏引擎</span>
+        <span class="date">2007.07 - 2007.09</span>
+      </div>
+      <p>S60 上使用的 3D 游戏引擎。个人职责：实现基本的 3D 渲染流水线和引擎框架，支持读取 3DS 文件、Skybox、Billboard 等功能。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">10 款手机游戏，2D 地图编辑器，2D 动作编辑器</span>
+        <span class="date">2005.08 - 2007.06</span>
+      </div>
+      <p>个人职责：程序员。</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>教育经历</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">上海师范大学 · 美术学 · 本科</span>
+        <span class="date">2006.02 - 2010.02</span>
+      </div>
+    </div>
+    <hr class="divider" />
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">华东电脑学院 · 计算机软件 · 大专</span>
+        <span class="date">2001.09 - 2004.07</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>培训经历 &amp; 证书</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">上海市业余科技学院</span>
+        <span class="date">2005.03 - 2005.05</span>
+      </div>
+      <p>培训机构：上海市 2005 年上半年全国计算机技术与软件专业技术资格（水平）考试</p>
+    </div>
+    <p><strong>证书：</strong>2005.05 高级程序员</p>
+  </section>
+
+  <section class="card">
+    <h2>语言能力</h2>
+    <p>英语：读写能力 良好 ｜ 听说能力 良好</p>
+  </section>
+
+  <section class="card">
+    <h2>专业技能</h2>
+    <div class="skills-list">
+      <span class="skill-tag">Unreal Engine (UE3/UE4) · 6年</span>
+      <span class="skill-tag">Java/J2ME · 熟练 · 30个月</span>
+      <span class="skill-tag">C/C++ · 熟练 · 40个月</span>
+      <span class="skill-tag">Visual C++ / MFC · 熟练 · 30个月</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">Havok / Havok Vision</span>
+      <span class="skill-tag">PhysX</span>
+      <span class="skill-tag">Scaleform</span>
+      <span class="skill-tag">Wwise</span>
+      <span class="skill-tag">SpeedTree</span>
+    </div>
+  </section>
+
+  <footer>© 郑皓东 个人简历</footer>
+
+</div>
+</body>
+</html>
