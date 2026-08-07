@@ -38,6 +38,16 @@
     margin: 0 0 6px;
     font-size: 28px;
   }
+  header.profile .title-tag {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 3px 12px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+  }
   header.profile .meta {
     font-size: 14px;
     opacity: 0.92;
@@ -113,6 +123,24 @@
     font-size: 14px;
     text-align: justify;
   }
+  .entry .stage {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 12px 0 4px;
+  }
+  .entry .stage:first-child {
+    margin-top: 4px;
+  }
+  .entry ul {
+    margin: 2px 0 4px;
+    padding-left: 20px;
+    font-size: 14px;
+  }
+  .entry ul li {
+    margin-bottom: 3px;
+    text-align: justify;
+  }
   .skills-list {
     display: flex;
     flex-wrap: wrap;
@@ -147,7 +175,8 @@
 
   <header class="profile">
     <h1>郑皓东</h1>
-    <div class="meta">男 · 43岁（1983年3月）· 10年以上工作经验 · 本科 · 上海-黄浦区</div>
+    <div class="title-tag">高级引擎 / 物理程序员</div>
+    <div class="meta">男 · 43岁（1983年3月）· 20年以上工作经验 · 本科 · 上海-黄浦区</div>
     <div class="contact">
       <span>📱 13764295682</span>
       <span>✉️ solidsnake@aliyun.com</span>
@@ -159,7 +188,7 @@
     <h2>求职意向</h2>
     <div class="intent-grid">
       <div><span class="label">期望工作地区：</span>上海</div>
-      <div><span class="label">期望月薪：</span>40000 + 元/月</div>
+      <div><span class="label">期望月薪：</span>40000+ 元/月</div>
       <div><span class="label">目前状况：</span>在职，考虑换新环境（到岗约1个月）</div>
       <div><span class="label">工作性质：</span>全职</div>
       <div><span class="label">从事职业：</span>软件/互联网开发/系统集成</div>
@@ -170,10 +199,11 @@
   <section class="card">
     <h2>自我评价</h2>
     <p class="summary">
-      软件设计师（高级程序员），拥有 20 年的游戏开发经验，12 年的 Unreal 引擎使用经验，也熟悉unity游戏引擎，
-      对美术和策划的工作也有一定了解。曾制作过 3D 游戏引擎（手机纯软件 C++ 实现）、3D 场景编辑器（支持高度图制作、
-      室内场景生成、CSG 操作、BSP 划分）、2D 动作编辑器与 2D 地图编辑器、粒子编辑器和特效编辑器。制作过各种类型的游戏，
-      拥有丰富的开发经验。
+      软件设计师（高级程序员），拥有 20 年的游戏开发经验，12 年的 Unreal 引擎使用经验，也熟悉 Unity 游戏引擎，
+      近年来专注于引擎底层与物理系统方向，在实时破碎、布料/毛发物理模拟、物理性能优化等方面有深入的实战经验，
+      对美术和策划的工作也有一定了解。早期曾制作过 3D 游戏引擎（手机纯软件 C++ 实现）、3D 场景编辑器（支持高度图制作、
+      室内场景生成、CSG 操作、BSP 划分）、2D 动作编辑器与 2D 地图编辑器、粒子编辑器和特效编辑器，制作过各种类型的游戏，
+      拥有丰富的全栈式游戏开发经验。
     </p>
   </section>
 
@@ -182,22 +212,29 @@
 
     <div class="entry">
       <div class="entry-header">
-        <span class="title">腾讯游戏. 引擎程序员</span>
+        <span class="title">腾讯游戏 · 引擎程序员</span>
         <span class="date">2020.07 - 至今</span>
       </div>
-      <div class="entry-sub">网络游戏 40000-45000 元/月</div>
-      <p>2020年7月~2022年 : 天美技术中台担任引擎开发
-          1.UE4中实现了实时破碎功能
-          2.联合QQ，在QQ中集成了UE4引擎，负责多world和离屏幕渲染流程，还有包体缩减的工作。
-         2022年~2023年 ： Z1-studio 中担任引擎开发
-          1.在UE5引擎中集成实时破碎功能，在UE5游戏中实现玻璃实时随机破碎功能。
-         2023年~至今 ： T1工作室技术中台，元梦之星项目组
-          1.负责物理引擎的优化，主要实现了物理性能预算分配器，物理分帧，和实现了异步物理更新流程（类似unity的FixedUpdate）
-          2.负责游戏中的物理表现，主要有人物的物理效果表现（柔软的感觉），头发（移植MagicaCloth到UE4中）和裙子效果模拟（扩展KawaiiPhysics），nvCloth功能移动端集成。
-          3.元梦之星性能分析和优化，视频播放插件，PC版各种超分和抗锯齿方案。
-          4.预研项目制作，物理载具拼装和人类一败涂地复刻和自定义重力组件等等。
+      <div class="entry-sub">网络游戏 · 40000-45000 元/月</div>
 
-      </p>
+      <p class="stage">2020.07 - 2022　天美技术中台 · 引擎开发</p>
+      <ul>
+        <li>在 UE4 中实现实时破碎功能</li>
+        <li>联合 QQ 团队，在 QQ 内集成 UE4 引擎，负责多 World 管理与离屏渲染流程，并完成包体缩减相关工作</li>
+      </ul>
+
+      <p class="stage">2022 - 2023　Z1-studio · 引擎开发</p>
+      <ul>
+        <li>在 UE5 引擎中集成实时破碎功能，实现游戏内玻璃的实时随机破碎效果</li>
+      </ul>
+
+      <p class="stage">2023 - 至今　T1 工作室技术中台 · 元梦之星项目组</p>
+      <ul>
+        <li>负责物理引擎优化，实现物理性能预算分配器、物理分帧机制，以及类似 Unity FixedUpdate 的异步物理更新流程</li>
+        <li>负责游戏内物理表现效果，包括角色柔体物理表现、头发模拟（将 MagicaCloth 移植至 UE4）、裙摆模拟（扩展 KawaiiPhysics）以及 nvCloth 移动端集成</li>
+        <li>负责元梦之星性能分析与优化、视频播放插件开发，以及 PC 版超分辨率与抗锯齿方案</li>
+        <li>负责预研项目开发，包括物理载具拼装系统、《人类一败涂地》玩法复刻及自定义重力组件等</li>
+      </ul>
     </div>
     <hr class="divider" />
 
@@ -251,51 +288,15 @@
 
     <div class="entry">
       <div class="entry-header">
-        <span class="title">上海鑫游软件公司 · 游戏设计/开发</span>
-        <span class="date">2008.12 - 2009.07</span>
+        <span class="title">早期经历（上海鑫游软件、傲聘电脑软件、上海米高软件、上海翡翠数码、上海元禾信息技术）</span>
+        <span class="date">2004.02 - 2009.07</span>
       </div>
-      <div class="entry-sub">网络游戏 · 4001-6000 元/月</div>
-      <p>引擎相关工具的开发，以及引擎研究。粒子系统及配套粒子编辑器、特效编辑器。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">傲聘电脑软件（上海）有限公司</span>
-        <span class="date">2008.01 - 2008.11</span>
-      </div>
-      <div class="entry-sub">网络游戏 · 4001-6000 元/月</div>
-      <p>制作 3D 游戏编辑器，3D 游戏逻辑。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">上海米高软件有限公司</span>
-        <span class="date">2006.02 - 2008.01</span>
-      </div>
-      <div class="entry-sub">计算机软件 · 4001-6000 元/月</div>
-      <p>J2ME 程序员，Symbian 程序员，游戏工具，3D 引擎。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">上海翡翠数码科技有限公司</span>
-        <span class="date">2005.07 - 2006.02</span>
-      </div>
-      <div class="entry-sub">计算机软件 · 2001-4000 元/月</div>
-      <p>J2ME 手机游戏程序员。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">上海元禾信息技术有限公司</span>
-        <span class="date">2004.02 - 2005.07</span>
-      </div>
-      <div class="entry-sub">计算机软件 · 1000-2000 元/月</div>
-      <p>MFC，数据库，C++，Linux。</p>
+      <div class="entry-sub">网络游戏 / 计算机软件</div>
+      <p>
+        从程序基础岗位逐步成长为独立负责引擎工具开发的骨干：先后从事 MFC/数据库/C++/Linux 开发、J2ME 与 Symbian 手机游戏开发，
+        后转向游戏引擎与工具方向，独立完成 3D 游戏编辑器、3D 游戏逻辑及引擎相关工具的研发，以及粒子系统与配套粒子编辑器、
+        特效编辑器的开发。
+      </p>
     </div>
   </section>
 
@@ -304,8 +305,35 @@
 
     <div class="entry">
       <div class="entry-header">
+        <span class="title">元梦之星 · 物理引擎优化</span>
+        <span class="date">2023 - 至今</span>
+      </div>
+      <p>腾讯 T1 工作室出品的多人派对游戏。个人职责：负责物理引擎性能优化（物理性能预算分配器、物理分帧、异步物理更新流程）与角色物理表现（柔体、头发、裙摆模拟），以及性能分析优化、超分/抗锯齿方案预研。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">UE5 实时破碎系统</span>
+        <span class="date">2022 - 2023</span>
+      </div>
+      <p>Z1-studio 项目中的引擎功能开发。个人职责：在 UE5 引擎中集成实时破碎功能，实现游戏内玻璃的实时随机破碎效果。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">QQ 内嵌 UE4 引擎</span>
+        <span class="date">2020.07 - 2022</span>
+      </div>
+      <p>天美技术中台项目，将 UE4 引擎集成进 QQ 客户端。个人职责：实现 UE4 实时破碎功能；负责多 World 管理、离屏渲染流程与包体缩减工作。</p>
+    </div>
+    <hr class="divider" />
+
+    <div class="entry">
+      <div class="entry-header">
         <span class="title">变形金刚（UE4）</span>
-        <span class="date">2019.10 - 至今</span>
+        <span class="date">2019.10 - 2020.06</span>
       </div>
       <p>用 UE4 制作的 TPS 射击游戏。个人职责：负责 AI 部分。</p>
     </div>
@@ -456,13 +484,18 @@
   <section class="card">
     <h2>专业技能</h2>
     <div class="skills-list">
-      <span class="skill-tag">Unreal Engine (UE3/UE4) · 6年</span>
-      <span class="skill-tag">Java/J2ME · 熟练 · 30个月</span>
+      <span class="skill-tag">Unreal Engine (UE3/UE4/UE5) · 12年</span>
+      <span class="skill-tag">Unity</span>
+      <span class="skill-tag">物理引擎优化 / 异步物理</span>
+      <span class="skill-tag">实时破碎系统</span>
+      <span class="skill-tag">PhysX / nvCloth</span>
+      <span class="skill-tag">MagicaCloth</span>
+      <span class="skill-tag">KawaiiPhysics</span>
+      <span class="skill-tag">Havok / Havok Vision</span>
       <span class="skill-tag">C/C++ · 熟练 · 40个月</span>
+      <span class="skill-tag">Java/J2ME · 熟练 · 30个月</span>
       <span class="skill-tag">Visual C++ / MFC · 熟练 · 30个月</span>
       <span class="skill-tag">Python</span>
-      <span class="skill-tag">Havok / Havok Vision</span>
-      <span class="skill-tag">PhysX</span>
       <span class="skill-tag">Scaleform</span>
       <span class="skill-tag">Wwise</span>
       <span class="skill-tag">SpeedTree</span>
