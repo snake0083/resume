@@ -1,509 +1,199 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>郑皓东 - 个人简历</title>
-<style>
-  :root {
-    --primary: #1a5276;
-    --accent: #2e86c1;
-    --bg: #f4f6f8;
-    --card-bg: #ffffff;
-    --text: #2c3e50;
-    --muted: #7f8c8d;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-  }
-  .container {
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 32px 20px 64px;
-  }
-  header.profile {
-    background: linear-gradient(135deg, var(--primary), var(--accent));
-    color: #fff;
-    border-radius: 12px;
-    padding: 32px 28px;
-    margin-bottom: 24px;
-    box-shadow: 0 8px 24px rgba(26, 82, 118, 0.25);
-  }
-  header.profile h1 {
-    margin: 0 0 6px;
-    font-size: 28px;
-  }
-  header.profile .title-tag {
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 3px 12px;
-    border-radius: 999px;
-    margin-bottom: 10px;
-  }
-  header.profile .meta {
-    font-size: 14px;
-    opacity: 0.92;
-    margin-bottom: 14px;
-  }
-  header.profile .contact {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    font-size: 14px;
-  }
-  header.profile .contact span {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 4px 10px;
-    border-radius: 999px;
-  }
-  section.card {
-    background: var(--card-bg);
-    border-radius: 10px;
-    padding: 22px 26px;
-    margin-bottom: 18px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  }
-  section.card h2 {
-    font-size: 18px;
-    color: var(--primary);
-    border-left: 4px solid var(--accent);
-    padding-left: 10px;
-    margin: 0 0 14px;
-  }
-  .intent-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px 24px;
-    font-size: 14px;
-  }
-  .intent-grid div span.label {
-    color: var(--muted);
-    margin-right: 6px;
-  }
-  .summary {
-    font-size: 14.5px;
-    color: var(--text);
-    text-align: justify;
-  }
-  .entry {
-    margin-bottom: 18px;
-  }
-  .entry:last-child { margin-bottom: 0; }
-  .entry-header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: baseline;
-    margin-bottom: 4px;
-  }
-  .entry-header .title {
-    font-weight: 600;
-    font-size: 15.5px;
-  }
-  .entry-header .date {
-    color: var(--muted);
-    font-size: 13px;
-    white-space: nowrap;
-  }
-  .entry-sub {
-    font-size: 13.5px;
-    color: var(--accent);
-    margin-bottom: 6px;
-  }
-  .entry p {
-    margin: 4px 0;
-    font-size: 14px;
-    text-align: justify;
-  }
-  .entry .stage {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--text);
-    margin: 12px 0 4px;
-  }
-  .entry .stage:first-child {
-    margin-top: 4px;
-  }
-  .entry ul {
-    margin: 2px 0 4px;
-    padding-left: 20px;
-    font-size: 14px;
-  }
-  .entry ul li {
-    margin-bottom: 3px;
-    text-align: justify;
-  }
-  .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .skill-tag {
-    background: #eaf2f8;
-    color: var(--primary);
-    padding: 6px 14px;
-    border-radius: 999px;
-    font-size: 13.5px;
-  }
-  .divider {
-    border: none;
-    border-top: 1px dashed #e0e0e0;
-    margin: 14px 0;
-  }
-  footer {
-    text-align: center;
-    color: var(--muted);
-    font-size: 12.5px;
-    margin-top: 24px;
-  }
-  @media print {
-    body { background: #fff; }
-    section.card { box-shadow: none; }
-  }
-</style>
-</head>
-<body>
-<div class="container">
+<div style="max-width:760px; margin:0 auto; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; color:#1a1a1a; line-height:1.8; font-size:15px;">
 
-  <header class="profile">
-    <h1>郑皓东</h1>
-    <div class="title-tag">高级引擎 / 物理程序员</div>
-    <div class="meta">男 · 43岁（1983年3月）· 20年以上工作经验 · 本科 · 上海-黄浦区</div>
-    <div class="contact">
-      <span>📱 13764295682</span>
-      <span>✉️ solidsnake@aliyun.com</span>
-      <span>户口：上海</span>
-    </div>
-  </header>
+  <div style="text-align:center; padding:32px 0 24px;">
+    <h1 style="font-size:32px; font-weight:900; color:#1a1a1a; margin:0 0 8px; line-height:1.4;">郑皓东</h1>
+    <p style="color:#888; font-size:15px; margin:0 0 24px;">高级引擎 / 物理程序员 · <span style="color:#e8913a; font-weight:700;">20年游戏开发经验 · 12年UE引擎经验</span></p>
+  </div>
 
-  <section class="card">
-    <h2>求职意向</h2>
-    <div class="intent-grid">
-      <div><span class="label">期望工作地区：</span>上海</div>
-      <div><span class="label">期望月薪：</span>40000+ 元/月</div>
-      <div><span class="label">目前状况：</span>在职，考虑换新环境（到岗约1个月）</div>
-      <div><span class="label">工作性质：</span>全职</div>
-      <div><span class="label">从事职业：</span>软件/互联网开发/系统集成</div>
-      <div><span class="label">从事行业：</span>互联网/电子商务、计算机软件、网络游戏</div>
-    </div>
-  </section>
+  <blockquote style="border-left:3px solid #e8913a; padding:16px 20px; margin:20px 0 32px; background:#fdf8f3; color:#1a1a1a; font-size:14px; line-height:1.9;">
+    从手机纯软件 3D 引擎到 UE5 实时破碎，从粒子编辑器到角色物理表现，20 年游戏开发生涯始终围绕<strong>引擎底层与物理系统</strong>展开。<br>
+    近年专注于<span style="color:#e8913a; font-weight:600;">实时破碎、布料/毛发物理模拟、物理性能优化</span>，在腾讯 T1 工作室负责《元梦之星》物理引擎全链路优化。
+  </blockquote>
 
-  <section class="card">
-    <h2>自我评价</h2>
-    <p class="summary">
-      软件设计师（高级程序员），拥有 20 年的游戏开发经验，12 年的 Unreal 引擎使用经验，也熟悉 Unity 游戏引擎，
-      近年来专注于引擎底层与物理系统方向，在实时破碎、布料/毛发物理模拟、物理性能优化等方面有深入的实战经验，
-      对美术和策划的工作也有一定了解。早期曾制作过 3D 游戏引擎（手机纯软件 C++ 实现）、3D 场景编辑器（支持高度图制作、
-      室内场景生成、CSG 操作、BSP 划分）、2D 动作编辑器与 2D 地图编辑器、粒子编辑器和特效编辑器，制作过各种类型的游戏，
-      拥有丰富的全栈式游戏开发经验。
+  <hr style="border:none; border-top:1px solid #eae8e4; margin:36px 0;">
+
+  <!-- CHAPTER 01 -->
+  <p style="font-size:12px; color:#e8913a; letter-spacing:2px; margin:0 0 4px;">CHAPTER 01</p>
+  <h2 style="font-size:20px; font-weight:800; color:#1a1a1a; margin:0 0 16px; line-height:1.4;">自我评价 <span style="color:#888; font-weight:400; font-size:13px; margin-left:8px;">PROFILE OVERVIEW</span></h2>
+
+  <p style="font-size:15px; color:#333; line-height:2; margin-bottom:14px;">
+    软件设计师（高级程序员），拥有 <strong>20 年</strong>的游戏开发经验，<strong>12 年</strong>的 Unreal 引擎使用经验，也熟悉 Unity 游戏引擎，
+    近年来专注于引擎底层与物理系统方向，在<span style="color:#e8913a; font-weight:500;">实时破碎、布料/毛发物理模拟、物理性能优化</span>等方面有深入的实战经验，
+    对美术和策划的工作也有一定了解。
+  </p>
+
+  <div style="text-align:center; padding:24px; background:#fff; border:1px solid #eae8e4; border-radius:8px; margin:20px 0;">
+    <div style="font-size:18px; font-weight:700; color:#1a1a1a; margin-bottom:6px;">全栈式开发经验 = <span style="color:#e8913a;">引擎工具</span> + <span style="color:#e8913a;">物理系统</span> + <span style="color:#e8913a;">跨端表现</span></div>
+    <div style="font-size:13px; color:#888;">3D引擎 / 场景编辑器 / 粒子编辑器 / 特效编辑器 / 2D动作与地图编辑器</div>
+  </div>
+
+  <hr style="border:none; border-top:1px solid #eae8e4; margin:36px 0;">
+
+  <!-- CHAPTER 02 -->
+  <p style="font-size:12px; color:#e8913a; letter-spacing:2px; margin:0 0 4px;">CHAPTER 02</p>
+  <h2 style="font-size:20px; font-weight:800; color:#1a1a1a; margin:0 0 16px; line-height:1.4;">求职意向 <span style="color:#888; font-weight:400; font-size:13px; margin-left:8px;">JOB TARGET</span></h2>
+
+  <table style="width:100%; border-collapse:collapse; margin:20px 0; font-size:14px;">
+    <tr>
+      <td style="width:50%; padding:16px; border:1px solid #eae8e4; vertical-align:top; background:#fff;">
+        <div style="font-size:18px; margin-bottom:8px;">📍</div>
+        <div style="font-weight:700; margin-bottom:4px; color:#1a1a1a;">工作地区 & 性质</div>
+        <div style="color:#888; font-size:13px; line-height:1.7;">期望地区：上海<br>工作性质：全职<br>目前状况：在职，考虑换新环境</div>
+      </td>
+      <td style="width:50%; padding:16px; border:1px solid #eae8e4; vertical-align:top; background:#fff;">
+        <div style="font-size:18px; margin-bottom:8px;">💰</div>
+        <div style="font-weight:700; margin-bottom:4px; color:#1a1a1a;">期望薪资</div>
+        <div style="color:#888; font-size:13px; line-height:1.7;"><span style="color:#e8913a; font-weight:700;">40000+ 元/月</span><br>从事行业：互联网/电子商务、计算机软件、网络游戏</div>
+      </td>
+    </tr>
+  </table>
+
+  <hr style="border:none; border-top:1px solid #eae8e4; margin:36px 0;">
+
+  <!-- CHAPTER 03 -->
+  <p style="font-size:12px; color:#e8913a; letter-spacing:2px; margin:0 0 4px;">CHAPTER 03</p>
+  <h2 style="font-size:20px; font-weight:800; color:#1a1a1a; margin:0 0 16px; line-height:1.4;">工作经历 <span style="color:#888; font-weight:400; font-size:13px; margin-left:8px;">WORK EXPERIENCE</span></h2>
+
+  <blockquote style="border-left:3px solid #e8913a; padding:14px 20px; margin:20px 0; background:#fdf8f3; color:#555; font-size:14px; line-height:1.8; font-style:italic;">
+    2020 年加入腾讯游戏，历经天美技术中台、Z1-studio、T1 工作室三段旅程，从实时破碎功能开发，逐步深入到物理引擎性能优化的核心地带。
+  </blockquote>
+
+  <table style="width:100%; border-collapse:collapse; margin:20px 0; font-size:14px;">
+    <tr>
+      <td style="width:25%; padding:18px 14px; border:1px solid #eae8e4; vertical-align:top; background:#fff; text-align:center;">
+        <div style="font-size:28px; font-weight:900; color:#3b7dd8; opacity:0.15; line-height:1; margin-bottom:8px;">1</div>
+        <div style="font-weight:700; margin-bottom:4px; font-size:13px;">2020-2022 天美技术中台</div>
+        <div style="color:#888; font-size:12px; line-height:1.6;">UE4 实时破碎；QQ 内嵌 UE4，负责多World管理、离屏渲染、包体缩减</div>
+      </td>
+      <td style="width:25%; padding:18px 14px; border:1px solid #eae8e4; vertical-align:top; background:#fff; text-align:center;">
+        <div style="font-size:28px; font-weight:900; color:#e8913a; opacity:0.15; line-height:1; margin-bottom:8px;">2</div>
+        <div style="font-weight:700; margin-bottom:4px; font-size:13px;">2022-2023 Z1-studio</div>
+        <div style="color:#888; font-size:12px; line-height:1.6;">UE5 实时破碎集成，实现玻璃实时随机破碎效果</div>
+      </td>
+      <td style="width:25%; padding:18px 14px; border:1px solid #eae8e4; vertical-align:top; background:#fff; text-align:center;">
+        <div style="font-size:28px; font-weight:900; color:#d94f3b; opacity:0.15; line-height:1; margin-bottom:8px;">3</div>
+        <div style="font-weight:700; margin-bottom:4px; font-size:13px;">2023-至今 T1 工作室</div>
+        <div style="color:#888; font-size:12px; line-height:1.6;">《元梦之星》物理引擎优化：性能预算分配器、物理分帧、异步更新流程</div>
+      </td>
+      <td style="width:25%; padding:18px 14px; border:1px solid #eae8e4; vertical-align:top; background:#fff; text-align:center;">
+        <div style="font-size:28px; font-weight:900; color:#2a9d6e; opacity:0.15; line-height:1; margin-bottom:8px;">4</div>
+        <div style="font-weight:700; margin-bottom:4px; font-size:13px;">物理表现效果</div>
+        <div style="color:#888; font-size:12px; line-height:1.6;">柔体物理、头发模拟（MagicaCloth移植UE4）、裙摆模拟（扩展KawaiiPhysics）、nvCloth移动端集成</div>
+      </td>
+    </tr>
+  </table>
+
+  <div style="padding:20px 24px; background:#f5f8ff; border:1px solid #d4e2f7; border-radius:8px; margin:20px 0;">
+    <div style="display:inline-block; font-size:11px; font-weight:700; padding:3px 10px; background:#e8f0fe; color:#3b7dd8; border-radius:4px; margin-bottom:10px;">补充说明</div>
+    <div style="font-weight:700; font-size:15px; margin-bottom:6px; color:#1a1a1a;">《元梦之星》项目补充职责</div>
+    <p style="font-size:14px; color:#555; line-height:1.8; margin:0;">负责元梦之星性能分析与优化、视频播放插件开发，以及 PC 版超分辨率与抗锯齿方案；负责预研项目开发，包括物理载具拼装系统、《人类一败涂地》玩法复刻及自定义重力组件等。</p>
+  </div>
+
+  <p style="font-size:14px; font-weight:700; color:#1a1a1a; margin:24px 0 8px;">更早期经历</p>
+  <ul style="margin:2px 0 4px; padding-left:20px; font-size:14px; color:#333; line-height:1.9;">
+    <li style="margin-bottom:6px;"><strong>北京卓越工坊（上海）· UE4高级程序员</strong>（2019.10-2020.06）：UE4 第三人称射击游戏，行为树与状态机实现敌人逻辑</li>
+    <li style="margin-bottom:6px;"><strong>上海英佩软件 · 游戏开发程序员</strong>（2013.08-2019.10）：UE3 射击网游，负责人物动画/武器/技能/载具/GameInfo，涉及Landscape、SpeedTree、PhysX、Scaleform、Wwise集成，最后两年转向UE4新项目及VR射击小游戏</li>
+    <li style="margin-bottom:6px;"><strong>上海第九城市 · 客户端程序员</strong>（2010.07-2013.08）：Havok Vision 动作网游，协助美术实现DOF、Motion Blur、HDR、动态草地、Ocean等表现效果</li>
+    <li style="margin-bottom:6px;"><strong>上海优酷软件(Gameloft) · 软件工程师</strong>（2009.07-2010.06）：PS3 赛车游戏图像开发，车辆材质/ShadowMap/粒子系统</li>
+    <li style="margin-bottom:6px;"><strong>更早期（2004.02-2009.07）</strong>：从MFC/数据库/C++/Linux开发、J2ME与Symbian手机游戏，逐步成长为3D游戏编辑器与工具研发骨干</li>
+  </ul>
+
+  <hr style="border:none; border-top:1px solid #eae8e4; margin:36px 0;">
+
+  <!-- CHAPTER 04 -->
+  <p style="font-size:12px; color:#e8913a; letter-spacing:2px; margin:0 0 4px;">CHAPTER 04</p>
+  <h2 style="font-size:20px; font-weight:800; color:#1a1a1a; margin:0 0 16px; line-height:1.4;">代表性项目 <span style="color:#888; font-weight:400; font-size:13px; margin-left:8px;">KEY PROJECTS</span></h2>
+
+  <table style="width:100%; border-collapse:collapse; margin:20px 0; font-size:14px;">
+    <thead>
+      <tr>
+        <th style="text-align:left; padding:12px 16px; background:#f5f0fa; color:#7c5cbf; font-weight:700; border:1px solid #eae8e4;">🎮 项目</th>
+        <th style="text-align:left; padding:12px 16px; background:#f0f7f2; color:#2a9d6e; font-weight:700; border:1px solid #eae8e4;">⚙️ 个人职责</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:10px 16px; border:1px solid #eae8e4; color:#555; line-height:1.7;"><strong>元梦之星</strong><br><span style="color:#888; font-size:12px;">2023-至今</span></td>
+        <td style="padding:10px 16px; border:1px solid #eae8e4; color:#555; line-height:1.7;">物理引擎性能优化（预算分配器/分帧/异步更新）与角色物理表现（柔体/头发/裙摆）</td>
+      </tr>
+      <tr>
+        <td style="padding:10px 16px; border:1px solid #eae8e4; color:#555; line-height:1.7;"><strong>UE5 实时破碎系统</strong><br><span style="color:#888; font-size:12px;">2022-2023</span></td>
+        <td style="padding:10px 16px; border:1px solid #eae8e4; color:#555; line-height:1.7;">UE5引擎集成实时破碎功能，实现玻璃实时随机破碎效果</td>
+      </tr>
+      <tr>
+        <td style="padding:10px 16px; border:1px solid #eae8e4; color:#555; line-height:1.7;"><strong>QQ 内嵌 UE4 引擎</strong><br><span style="color:#888; font-size:12px;">2020.07-2022</span></td>
+        <td style="padding:10px 16px; border:1px solid #eae8e4; color:#555; line-height:1.7;">UE4实时破碎功能；多World管理、离屏渲染流程、包体缩减</td>
+      </tr>
+      <tr>
+        <td style="padding:10px 16px; border:1px solid #eae8e4; color:#555; line-height:1.7;"><strong>变形金刚（UE4）</strong><br><span style="color:#888; font-size:12px;">2019.10-2020.06</span></td>
+        <td style="padding:10px 16px; border:1px solid #eae8e4; color:#555; line-height:1.7;">TPS射击游戏，负责AI部分</td>
+      </tr>
+      <tr>
+        <td style="padding:10px 16px; border:1px solid #eae8e4; color:#555; line-height:1.7;"><strong>火源（UE4 VR）</strong><br><span style="color:#888; font-size:12px;">2017.09-2017.12</span></td>
+        <td style="padding:10px 16px; border:1px solid #eae8e4; color:#555; line-height:1.7;">VR游戏，完全负责程序部分</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="padding:20px 24px; background:#fdf8f3; border:1px solid #f0dcc8; border-radius:8px; margin:20px 0;">
+    <div style="display:inline-block; font-size:11px; font-weight:700; padding:3px 10px; background:#fceede; color:#e8913a; border-radius:4px; margin-bottom:10px;">💡 更早期项目</div>
+    <p style="font-size:14px; color:#555; line-height:1.8; margin:0;">
+      火源（UE3）、Mux（动作网游）、PS3赛车游戏、Combo Effect Editor、粒子编辑器、3D场景编辑器、Cooking、疯狂吉他、3D游戏乒乓、Symbian C++软件渲染引擎，以及10款手机游戏和2D编辑器 —— 覆盖从渲染引擎到工具链的完整开发链路。
     </p>
-  </section>
+  </div>
 
-  <section class="card">
-    <h2>工作经历</h2>
+  <hr style="border:none; border-top:1px solid #eae8e4; margin:36px 0;">
 
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">腾讯游戏 · 引擎程序员</span>
-        <span class="date">2020.07 - 至今</span>
-      </div>
-      <div class="entry-sub">网络游戏 · 40000-45000 元/月</div>
+  <!-- CHAPTER 05 -->
+  <p style="font-size:12px; color:#e8913a; letter-spacing:2px; margin:0 0 4px;">CHAPTER 05</p>
+  <h2 style="font-size:20px; font-weight:800; color:#1a1a1a; margin:0 0 16px; line-height:1.4;">教育背景 & 专业技能 <span style="color:#888; font-weight:400; font-size:13px; margin-left:8px;">EDUCATION & SKILLS</span></h2>
 
-      <p class="stage">2020.07 - 2022　天美技术中台 · 引擎开发</p>
-      <ul>
-        <li>在 UE4 中实现实时破碎功能</li>
-        <li>联合 QQ 团队，在 QQ 内集成 UE4 引擎，负责多 World 管理与离屏渲染流程，并完成包体缩减相关工作</li>
-      </ul>
+  <table style="width:100%; border-collapse:collapse; margin:20px 0; font-size:14px;">
+    <tr>
+      <td style="width:50%; padding:16px; border:1px solid #eae8e4; vertical-align:top; background:#fff;">
+        <div style="font-size:18px; margin-bottom:8px;">🎓</div>
+        <div style="font-weight:700; margin-bottom:4px; color:#1a1a1a;">上海师范大学</div>
+        <div style="color:#888; font-size:13px; line-height:1.7;">美术学 · 本科（2006.02-2010.02）</div>
+      </td>
+      <td style="width:50%; padding:16px; border:1px solid #eae8e4; vertical-align:top; background:#fff;">
+        <div style="font-size:18px; margin-bottom:8px;">📜</div>
+        <div style="font-weight:700; margin-bottom:4px; color:#1a1a1a;">证书 & 语言</div>
+        <div style="color:#888; font-size:13px; line-height:1.7;">2005.05 高级程序员证书<br>英语读写/听说：良好</div>
+      </td>
+    </tr>
+  </table>
 
-      <p class="stage">2022 - 2023　Z1-studio · 引擎开发</p>
-      <ul>
-        <li>在 UE5 引擎中集成实时破碎功能，实现游戏内玻璃的实时随机破碎效果</li>
-      </ul>
-
-      <p class="stage">2023 - 至今　T1 工作室技术中台 · 元梦之星项目组</p>
-      <ul>
-        <li>负责物理引擎优化，实现物理性能预算分配器、物理分帧机制，以及类似 Unity FixedUpdate 的异步物理更新流程</li>
-        <li>负责游戏内物理表现效果，包括角色柔体物理表现、头发模拟（将 MagicaCloth 移植至 UE4）、裙摆模拟（扩展 KawaiiPhysics）以及 nvCloth 移动端集成</li>
-        <li>负责元梦之星性能分析与优化、视频播放插件开发，以及 PC 版超分辨率与抗锯齿方案</li>
-        <li>负责预研项目开发，包括物理载具拼装系统、《人类一败涂地》玩法复刻及自定义重力组件等</li>
-      </ul>
+  <div style="padding:24px; background:#fff; border:1px solid #eae8e4; border-radius:8px; margin:20px 0;">
+    <div style="font-size:13px; font-weight:600; color:#1a1a1a; margin-bottom:14px;">核心技能栈 <span style="color:#888; font-weight:400;">TECH STACK</span></div>
+    <div style="display:flex; flex-wrap:wrap; gap:10px;">
+      <span style="background:#eaf2f8; color:#1a5276; padding:6px 14px; border-radius:999px; font-size:13px;">Unreal Engine UE3/4/5 · 12年</span>
+      <span style="background:#eaf2f8; color:#1a5276; padding:6px 14px; border-radius:999px; font-size:13px;">Unity</span>
+      <span style="background:#eaf2f8; color:#1a5276; padding:6px 14px; border-radius:999px; font-size:13px;">物理引擎优化/异步物理</span>
+      <span style="background:#eaf2f8; color:#1a5276; padding:6px 14px; border-radius:999px; font-size:13px;">实时破碎系统</span>
+      <span style="background:#eaf2f8; color:#1a5276; padding:6px 14px; border-radius:999px; font-size:13px;">PhysX / nvCloth</span>
+      <span style="background:#eaf2f8; color:#1a5276; padding:6px 14px; border-radius:999px; font-size:13px;">MagicaCloth</span>
+      <span style="background:#eaf2f8; color:#1a5276; padding:6px 14px; border-radius:999px; font-size:13px;">KawaiiPhysics</span>
+      <span style="background:#eaf2f8; color:#1a5276; padding:6px 14px; border-radius:999px; font-size:13px;">Havok / Havok Vision</span>
+      <span style="background:#eaf2f8; color:#1a5276; padding:6px 14px; border-radius:999px; font-size:13px;">C/C++ · 40个月</span>
+      <span style="background:#eaf2f8; color:#1a5276; padding:6px 14px; border-radius:999px; font-size:13px;">Java/J2ME · 30个月</span>
+      <span style="background:#eaf2f8; color:#1a5276; padding:6px 14px; border-radius:999px; font-size:13px;">VC++ / MFC · 30个月</span>
+      <span style="background:#eaf2f8; color:#1a5276; padding:6px 14px; border-radius:999px; font-size:13px;">Python</span>
+      <span style="background:#eaf2f8; color:#1a5276; padding:6px 14px; border-radius:999px; font-size:13px;">Scaleform</span>
+      <span style="background:#eaf2f8; color:#1a5276; padding:6px 14px; border-radius:999px; font-size:13px;">Wwise</span>
+      <span style="background:#eaf2f8; color:#1a5276; padding:6px 14px; border-radius:999px; font-size:13px;">SpeedTree</span>
     </div>
-    <hr class="divider" />
+  </div>
 
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">北京卓越工坊（上海）有限公司 · UE4 高级程序员</span>
-        <span class="date">2019.10 - 2020.06</span>
-      </div>
-      <div class="entry-sub">网络游戏 · 15000-25000 元/月</div>
-      <p>使用 UE4 开发第三人称射击游戏，主要使用行为树和状态机实现敌人的逻辑。</p>
+  <hr style="border:none; border-top:1px solid #eae8e4; margin:40px 0;">
+
+  <div style="text-align:center; padding:20px 0 32px;">
+    <h2 style="font-size:22px; font-weight:900; color:#1a1a1a; margin:0 0 16px; line-height:1.5;">20年游戏开发路<br>始于渲染引擎，<span style="color:#e8913a;">深耕于物理系统</span></h2>
+    <p style="font-size:14px; color:#555; max-width:520px; margin:0 auto 24px; line-height:2;">
+      从 Symbian 手机纯软件渲染引擎，到 UE5 实时破碎系统；从 2D 地图编辑器，到腾讯《元梦之星》物理性能全链路优化 —— 20 年间技术栈不断迭代，唯一不变的是对底层引擎与物理表现的持续钻研。
+    </p>
+    <div style="max-width:480px; margin:0 auto; padding:18px 24px; background:#fdf8f3; border:1px solid #f0dcc8; border-radius:8px; font-size:15px; font-weight:700; color:#e8913a;">
+      ✦ 20年沉淀，专精引擎与物理，期待新的挑战 ✦
     </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">上海英佩软件有限公司 · 游戏开发程序员</span>
-        <span class="date">2013.08 - 2019.10</span>
-      </div>
-      <div class="entry-sub">网络游戏 · 15000-25000 元/月</div>
-      <p>
-        使用 UE3 引擎开发射击网络游戏，主要负责人物动画、武器、技能、载具、GameInfo 等游戏相关逻辑开发，
-        系统设置、输入法、游戏优化（内存支持 32 位系统、FPS 优化等）、头发材质、反外挂，也负责 Landscape、
-        SpeedTree、PhysX、Scaleform、Wwise 等相关集成。最近两年主要工作是 UE4 新项目开发，开发过一个 VR 射击小游戏。
-      </p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">上海第九城市 · 客户端程序员</span>
-        <span class="date">2010.07 - 2013.08</span>
-      </div>
-      <div class="entry-sub">网络游戏 · 10001-15000 元/月</div>
-      <p>
-        使用 Havok Vision 制作动作网络游戏，负责协助美术并提供解决方案制作客户端表现效果，包括 DOF、Motion Blur、
-        HDR、Landscape、动态草地、Ocean、Virtual Texture Map、流光特效等，进度紧张时也参与客户端逻辑开发。
-        使用过的中间件包括 Havok Vision、Havok、PhysX、Scaleform、Recast、SpeedTree 等。
-      </p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">上海优酷软件 (Gameloft) 有限公司 · 软件工程师</span>
-        <span class="date">2009.07 - 2010.06</span>
-      </div>
-      <div class="entry-sub">计算机软件 · 6001-8000 元/月</div>
-      <p>PS3 赛车游戏开发，主要负责图像方面的工作，包括车辆材质、ShadowMap、粒子系统等。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">早期经历（上海鑫游软件、傲聘电脑软件、上海米高软件、上海翡翠数码、上海元禾信息技术）</span>
-        <span class="date">2004.02 - 2009.07</span>
-      </div>
-      <div class="entry-sub">网络游戏 / 计算机软件</div>
-      <p>
-        从程序基础岗位逐步成长为独立负责引擎工具开发的骨干：先后从事 MFC/数据库/C++/Linux 开发、J2ME 与 Symbian 手机游戏开发，
-        后转向游戏引擎与工具方向，独立完成 3D 游戏编辑器、3D 游戏逻辑及引擎相关工具的研发，以及粒子系统与配套粒子编辑器、
-        特效编辑器的开发。
-      </p>
-    </div>
-  </section>
-
-  <section class="card">
-    <h2>项目经历</h2>
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">元梦之星 · 物理引擎优化</span>
-        <span class="date">2023 - 至今</span>
-      </div>
-      <p>腾讯 T1 工作室出品的多人派对游戏。个人职责：负责物理引擎性能优化（物理性能预算分配器、物理分帧、异步物理更新流程）与角色物理表现（柔体、头发、裙摆模拟），以及性能分析优化、超分/抗锯齿方案预研。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">UE5 实时破碎系统</span>
-        <span class="date">2022 - 2023</span>
-      </div>
-      <p>Z1-studio 项目中的引擎功能开发。个人职责：在 UE5 引擎中集成实时破碎功能，实现游戏内玻璃的实时随机破碎效果。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">QQ 内嵌 UE4 引擎</span>
-        <span class="date">2020.07 - 2022</span>
-      </div>
-      <p>天美技术中台项目，将 UE4 引擎集成进 QQ 客户端。个人职责：实现 UE4 实时破碎功能；负责多 World 管理、离屏渲染流程与包体缩减工作。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">变形金刚（UE4）</span>
-        <span class="date">2019.10 - 2020.06</span>
-      </div>
-      <p>用 UE4 制作的 TPS 射击游戏。个人职责：负责 AI 部分。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">火源（UE4 VR 展示游戏）</span>
-        <span class="date">2017.09 - 2017.12</span>
-      </div>
-      <p>用 UE4 制作 VR 游戏。个人职责：完全负责程序部分。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">火源</span>
-        <span class="date">2013.08 - 2019.10</span>
-      </div>
-      <p>用 UE3 制作的射击类网游。个人职责：客户端程序。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">Mux</span>
-        <span class="date">2010.07 - 2013.08</span>
-      </div>
-      <p>无目标类动作网游，固定视角。个人职责：客户端程序。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">PS3 赛车游戏</span>
-        <span class="date">2009.07 - 2010.06</span>
-      </div>
-      <p>PS3 PSN 赛车游戏。个人职责：主要负责制作游戏所需的各种 Shader、粒子特效部分。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">Combo Effect Editor</span>
-        <span class="date">2009.02 - 2009.07</span>
-      </div>
-      <p>预览 3dsMax 插件导出的模型、骨骼、动画在引擎中的效果；模型、粒子系统等绑定在骨骼上，纹理动画。个人职责：全部负责。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">粒子编辑器</span>
-        <span class="date">2008.12 - 2009.01</span>
-      </div>
-      <p>粒子编辑器，支持多发射器，内有曲线编辑器，支持发射粒子、模型、尾迹粒子，可满足所有游戏的粒子系统要求。个人职责：全部负责。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">3D 场景编辑器</span>
-        <span class="date">2008.08 - 2008.11</span>
-      </div>
-      <p>以 Unreal 编辑器为目标的编辑器。个人职责：实现高度图地形制作、BSP 分割、CSG 操作、生成光照贴图、BSP 碰撞检测、Portal 计算、PVS 生成。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">Cooking</span>
-        <span class="date">2008.05 - 2008.10</span>
-      </div>
-      <p>类似于 Wii 上的料理妈妈，采用蓝牙感应手柄模拟烧菜步骤的游戏。个人职责：逻辑程序员，负责几道菜的逻辑。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">疯狂吉他</span>
-        <span class="date">2008.01 - 2008.05</span>
-      </div>
-      <p>类似于 PS2 上的吉他英雄，采用吉他外形操纵器根据屏幕提示弹奏音符的游戏。个人职责：制作编辑器，可编辑演出现场一切物体，包括场景灯光、灯光颜色、骨骼动画、口型动画等，并提供可视化预览。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">3D 游戏：乒乓</span>
-        <span class="date">2007.10 - 2007.12</span>
-      </div>
-      <p>类似于 Sega 猴子球的游戏。个人职责：使用软件渲染引擎制作。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">Symbian C++ 纯软件渲染 3D 游戏引擎</span>
-        <span class="date">2007.07 - 2007.09</span>
-      </div>
-      <p>S60 上使用的 3D 游戏引擎。个人职责：实现基本的 3D 渲染流水线和引擎框架，支持读取 3DS 文件、Skybox、Billboard 等功能。</p>
-    </div>
-    <hr class="divider" />
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">10 款手机游戏，2D 地图编辑器，2D 动作编辑器</span>
-        <span class="date">2005.08 - 2007.06</span>
-      </div>
-      <p>个人职责：程序员。</p>
-    </div>
-  </section>
-
-  <section class="card">
-    <h2>教育经历</h2>
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">上海师范大学 · 美术学 · 本科</span>
-        <span class="date">2006.02 - 2010.02</span>
-      </div>
-    </div>
-    <hr class="divider" />
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">华东电脑学院 · 计算机软件 · 大专</span>
-        <span class="date">2001.09 - 2004.07</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="card">
-    <h2>培训经历 &amp; 证书</h2>
-    <div class="entry">
-      <div class="entry-header">
-        <span class="title">上海市业余科技学院</span>
-        <span class="date">2005.03 - 2005.05</span>
-      </div>
-      <p>培训机构：上海市 2005 年上半年全国计算机技术与软件专业技术资格（水平）考试</p>
-    </div>
-    <p><strong>证书：</strong>2005.05 高级程序员</p>
-  </section>
-
-  <section class="card">
-    <h2>语言能力</h2>
-    <p>英语：读写能力 良好 ｜ 听说能力 良好</p>
-  </section>
-
-  <section class="card">
-    <h2>专业技能</h2>
-    <div class="skills-list">
-      <span class="skill-tag">Unreal Engine (UE3/UE4/UE5) · 12年</span>
-      <span class="skill-tag">Unity</span>
-      <span class="skill-tag">物理引擎优化 / 异步物理</span>
-      <span class="skill-tag">实时破碎系统</span>
-      <span class="skill-tag">PhysX / nvCloth</span>
-      <span class="skill-tag">MagicaCloth</span>
-      <span class="skill-tag">KawaiiPhysics</span>
-      <span class="skill-tag">Havok / Havok Vision</span>
-      <span class="skill-tag">C/C++ · 熟练 · 40个月</span>
-      <span class="skill-tag">Java/J2ME · 熟练 · 30个月</span>
-      <span class="skill-tag">Visual C++ / MFC · 熟练 · 30个月</span>
-      <span class="skill-tag">Python</span>
-      <span class="skill-tag">Scaleform</span>
-      <span class="skill-tag">Wwise</span>
-      <span class="skill-tag">SpeedTree</span>
-    </div>
-  </section>
-
-  <footer>© 郑皓东 个人简历</footer>
+  </div>
 
 </div>
-</body>
-</html>
